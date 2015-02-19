@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Modern Art</string>
+    <string name="title_section1">About</string>
+    <string name="title_section2">Piet Mondrian</string>
+    <string name="title_section3">Daniel Buren</string>
+    <string name="title_section4">Sol LeWitt</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="visit_moma">Visit MoMA website</string>
+    <string name="start_animation">Start animation</string>
+    <string name="stop_animation">Stop animation</string>
+    <string name="about_txt">About this app!</string>
+</resources>

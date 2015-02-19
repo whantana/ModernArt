@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ModernArtAppTheme"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="3"
+    tools:context=".PlaceholderFragment"
+    android:orientation="vertical"
+    android:useDefaultMargins="true">
+
+    <FrameLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="fill"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_rowSpan="1"
+        android:id="@+id/pm_f_00"
+        android:background="@color/pm_c1_s"
+        android:layout_columnSpan="1" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_rowSpan="2"
+        android:id="@+id/pm_f_10"
+        android:background="@color/pm_c3_s"
+        android:layout_gravity="fill" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:id="@+id/pm_f_01"
+        android:background="@color/pm_c3_s"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:id="@+id/pm_f_11"
+        android:background="@color/pm_c2_s"
+        android:layout_gravity="fill" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:id="@+id/pm_f_21"
+        android:background="@color/pm_c3_s"
+        android:layout_gravity="fill" />
+</GridLayout>

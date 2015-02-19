@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application theme -->
+    <style name="ModernArtAppTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+
+    <!-- Pier Mondrian colors -->
+    <color name="pm_c1_s">#ffc12f22</color>
+    <color name="pm_c1_m">@color/background_floating_material_dark</color>
+    <color name="pm_c1_e">#ff0c56be</color>
+    <color name="pm_c2_s">#ff0c56be</color>
+    <color name="pm_c2_m">@color/background_floating_material_dark</color>
+    <color name="pm_c2_e">#ffc12f22</color>
+
+    <color name="pm_c3_s">#ffffffff</color>
+    <color name="pm_c3_m">#ffffffff</color>
+    <color name="pm_c3_e">#ffffffff</color>
+    <array name="pm_c_s">
+        <item>@color/pm_c1_s</item>
+        <item>@color/pm_c2_s</item>
+        <item>@color/pm_c3_s</item>
+    </array>
+    <array name="pm_c_m">
+        <item>@color/pm_c1_m</item>
+        <item>@color/pm_c2_m</item>
+        <item>@color/pm_c3_m</item>
+    </array>
+    <array name="pm_c_e">
+        <item>@color/pm_c1_e</item>
+        <item>@color/pm_c2_e</item>
+        <item>@color/pm_c3_e</item>
+    </array>
+
+</resources>
