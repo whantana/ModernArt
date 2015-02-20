@@ -9,6 +9,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="visit_moma">Visit MoMA website</string>
+    <string name="artist_bio">Biography</string>
     <string name="start_animation">Start animation</string>
     <string name="stop_animation">Stop animation</string>
     <string name="about_txt">About this app!</string>

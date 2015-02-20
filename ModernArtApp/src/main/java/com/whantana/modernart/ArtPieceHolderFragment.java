@@ -5,8 +5,12 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 /**
  * An art piece holder fragment containing different interchangeable views.
@@ -19,7 +23,7 @@ public class ArtPieceHolderFragment extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
 
     /**
-     * A tag :D
+     * A tag :)
      */
     private static final String TAG = "ArtPieceHolderFragment";
 
@@ -110,5 +114,37 @@ public class ArtPieceHolderFragment extends Fragment {
                 throw new IllegalStateException();
 
         }
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        Log.d(TAG, "onActivityCreated():");
+
+        // Indicate that this fragment would like to influence the set of actions in the action bar.
+        setHasOptionsMenu(true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        // if the item of visit_moma
+        if (id == R.id.visit_moma) {
+            Toast.makeText(
+                    getActivity().getApplicationContext(),
+                    "http://www.moma.org/", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (id == R.id.artist_bio) {
+
+            final int sectionNumber = getArguments().getInt(ARG_SECTION_NUMBER);
+
+            Toast.makeText(
+                    getActivity().getApplicationContext(),
+                    "Artist Bio " + sectionNumber, Toast.LENGTH_SHORT).show();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
